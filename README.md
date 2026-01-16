@@ -1,59 +1,52 @@
 # MangaSite
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
+📚 MangaSite — Leitor de Mangás Online
 
-## Development server
+O MangaSite é uma aplicação web desenvolvida em Angular que permite explorar, visualizar e ler mangás online de forma moderna, rápida e responsiva. O projeto consome a API pública da MangaDex, exibindo mangás populares, capas, autores e capítulos, com suporte a paginação e navegação dinâmica.
 
-To start a local development server, run:
+A interface foi construída utilizando PrimeNG, garantindo um layout limpo, componentes reutilizáveis e uma boa experiência do usuário em diferentes tamanhos de tela.
+
+## 🚀 Funcionalidades
+
+- 📖 Listagem de mangás populares via MangaDex API
+- 🖼️ Exibição de capas, títulos, autores e quantidade de capítulos
+- 🔄 Paginação dinâmica (20 mangás por página, páginas ilimitadas)
+- 🔍 Sidebar com mangás mais populares
+- 📱 Layout totalmente responsivo
+- ⚡ Carregamento com indicador visual (loading)
+- 🔀 Navegação entre páginas (Home, Categorias, Contato, Termos, Privacidade)
+- 📚 Página de leitura e listagem de capítulos (em desenvolvimento)
+
+## 🛠️ Tecnologias Utilizadas
+
+- Angular 16+
+- TypeScript
+- PrimeNG
+- PrimeFlex
+- HTML5 & CSS3
+- MangaDex Public API
+- RxJS
+
+## 🧩 Arquitetura
+
+Componentes standalone com separação clara entre:
+
+- UI (componentes visuais)
+- Serviços de consumo de API
+- Roteamento
+- Boas práticas de organização e reutilização de componentes
+
+## 📦 Instalação e Execução
 
 ```bash
+# Clone o repositório
+git clone https://github.com/LucasC250/ProjetoMang-.git
+
+# Acesse a pasta
+cd MangaSite
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

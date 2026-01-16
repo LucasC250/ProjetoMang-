@@ -1,0 +1,155 @@
+.leitor-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.leitor-header {
+  background: var(--surface-50);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  min-height: 500px;
+  background: var(--surface-0);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.page-image {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pages-selector {
+  flex-wrap: wrap;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+.page-dot {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--surface-100);
+  border: 2px solid var(--surface-300);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.page-dot:hover {
+  background: var(--surface-200);
+  border-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.page-dot.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.leitor-footer {
+  background: var(--surface-50);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+/* Estilo para cards de fontes alternativas */
+:host ::ng-deep .p-card {
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+:host ::ng-deep .p-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .leitor-container {
+    padding: 0.5rem;
+  }
+
+  .page-container {
+    padding: 0.5rem;
+    min-height: 400px;
+  }
+
+  .page-dot {
+    width: 32px;
+    height: 32px;
+    font-size: 0.75rem;
+  }
+
+  .leitor-header,
+  .leitor-footer {
+    padding: 1rem;
+  }
+
+  .page-image {
+    max-height: 75vh;
+  }
+}
+
+/* Informações técnicas */
+.tech-info {
+  font-family: 'Courier New', monospace;
+  background: var(--surface-900);
+  color: var(--surface-100);
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+
+/* Estilos para a tela de redirecionamento */
+.redirect-container {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.countdown-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.url-display {
+  background: var(--surface-900);
+  color: var(--surface-100);
+  padding: 1rem;
+  border-radius: 6px;
+  font-family: 'Courier New', monospace;
+  word-break: break-all;
+  border-left: 4px solid var(--primary-color);
+}

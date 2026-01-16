@@ -1,0 +1,41 @@
+<app-toolbar></app-toolbar>
+
+<div class="flex justify-content-center p-4">
+  <p-card
+    class="w-full md:w-8 lg:w-6"
+    [style]="{
+      border: '1px solid var(--surface-300)',
+      'border-radius': '0.75rem'
+    }"
+  >
+    <h2 class="mt-0 mb-2">Entre em contato</h2>
+    <p class="text-color-secondary mb-4">
+      Tem alguma dúvida, sugestão ou problema? Fale com a gente.
+    </p>
+
+    <div class="flex flex-column gap-4">
+      <!-- Nome -->
+      <span class="p-float-label">
+        <input pInputText id="nome" class="w-full" />
+        <label for="nome">Nome</label>
+      </span>
+
+      <!-- Assunto -->
+      <span class="p-float-label">
+        <input pInputText id="assunto" class="w-full" />
+        <label for="assunto">Assunto</label>
+      </span>
+
+      <!-- Mensagem -->
+      <span class="p-float-label">
+        <textarea
+          pInputTextarea
+          id="mensagem"
+          rows="5"
+          class="w-full"
+        ></textarea>
+        <label for="mensagem">Mensagem</label>
+      </span>
+    </div>
+  </p-card>
+</div>
